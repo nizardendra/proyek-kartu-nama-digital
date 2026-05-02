@@ -1,0 +1,13 @@
+name: Pengecekan Kode CI
+
+on: [push]
+
+jobs:
+  proses-cek:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil Kode
+        uses: actions/checkout@v4
+
+      - name: Cek File index.html
+        run: ls index.html
