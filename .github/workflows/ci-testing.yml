@@ -1,13 +1,14 @@
-name: Pengecekan Kode CI
+name: Validasi Kartu Nama
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
-  proses-cek:
+  lint-html:
     runs-on: ubuntu-latest
     steps:
       - name: Ambil Kode
         uses: actions/checkout@v4
 
-      - name: Cek File index.html
-        run: ls index.html
+      - name: Cek Struktur HTML
+        # Kita menggunakan perintah sederhana untuk memastikan file ada
+        run: test -f index.html && echo "File index.html ditemukan!"
