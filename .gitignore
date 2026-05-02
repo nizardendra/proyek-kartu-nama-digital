@@ -1,0 +1,13 @@
+# OS Metadata (File sampah sistem operasi)
+.DS_Store
+Thumbs.db
+
+# Folder IDE/Editor (Settingan pribadi editormu)
+.vscode/
+.idea/
+
+# File log (Catatan error yang tidak perlu diunggah)
+*.log
+
+# Environment variables (Variabel sensitif)
+.env
